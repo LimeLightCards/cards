@@ -2,10 +2,10 @@
   "name": "cards",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "npm run get:cards",
-    "get:cards": "ts-node scripts/get-cards"
+    "get:cards": "ts-node scripts/get-cards",
+    "check:version": "ts-node scripts/check-version"
   },
   "repository": {
     "type": "git",
