@@ -1,0 +1,28 @@
+{
+  "name": "cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run get:cards",
+    "get:cards": "ts-node scripts/get-cards"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limelightcards/cards.git"
+  },
+  "bugs": {
+    "url": "https://github.com/limelightcards/cards/issues"
+  },
+  "homepage": "https://github.com/limelightcards/cards#readme",
+  "dependencies": {
+    "compress-json": "^2.1.2",
+    "fs-extra": "^10.1.0",
+    "git-clone-repo": "^1.0.0",
+    "lodash": "^4.17.21",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
+}
