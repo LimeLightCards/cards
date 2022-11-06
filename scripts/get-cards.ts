@@ -1,4 +1,5 @@
 const fs = require('fs-extra');
+const md5 = require('md5-file');
 const { default: gitClone } = require('git-clone-repo');
 const { compress } = require('compress-json');
 const { capitalize } = require('lodash');
@@ -82,5 +83,6 @@ const formattedCards = allCards.map(card => classify(card));
 
 fs.writeJsonSync('dist/cards.json', formattedCards);
 fs.writeJsonSync('dist/cards.min.json', compress(formattedCards));
+fs.writeJsonSync('dist/version.json', { version: md5.sync('dist/cards.json') });
 
 console.log(`Got ${formattedCards.length} cards!`);
