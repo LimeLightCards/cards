@@ -1,4 +1,4 @@
-name: Build to Netlify
+name: Nightly Build to Netlify
 
 on:
   schedule:
