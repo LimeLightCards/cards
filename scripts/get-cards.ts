@@ -85,7 +85,7 @@ allCards.forEach(card => {
 
   card.trigger = card.trigger.map(trigger => capitalize(trigger.toLowerCase()));
 
-  card.image = cardimages[card.id] || card.image;
+  card.image = cardimages[card.code] || card.image;
 });
 
 const formattedCards = allCards.map(card => classify(card));
