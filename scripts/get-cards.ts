@@ -13,6 +13,13 @@ console.log('Cloning set metadata...');
 gitClone('LimeLightCards/setdata', { destination: 'cards/meta' });
 fs.copySync('cards/meta/expansions.json', 'dist/expansions.json');
 
+console.log('Cloning card cache data...');
+gitClone('LimeLightCards/scraper-data', { destination: 'cards/cache' });
+
+const cardimages = fs.readdirSync('cards/cache/cardimages')
+  .map(file => fs.readJsonSync(`cards/cache/cardimages/${file}`))
+  .reduce((acc, val) => ({ ...acc, ...val }), {});
+
 const files = fs.readdirSync('cards/DB');
 
 const allTriggers = ['CHOICE', 'COMEBACK', 'DRAW', 'GATE', 'POOL', 'RETURN', 'SHOT', 'SOUL', 'STANDBY', 'TREASURE'];
@@ -77,6 +84,8 @@ allCards.forEach(card => {
   card.attributes = card.attributes.filter(a => a !== '-' && a !== '－');
 
   card.trigger = card.trigger.map(trigger => capitalize(trigger.toLowerCase()));
+
+  card.image = cardimages[card.id] || card.image;
 });
 
 const formattedCards = allCards.map(card => classify(card));
