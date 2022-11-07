@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npm run get:cards",
+    "build": "npm run get:cards && npm run copy:headers",
+    "copy:headers": "ts-node scripts/copy-headers",
     "get:cards": "ts-node scripts/get-cards",
     "check:version": "ts-node scripts/check-version"
   },
