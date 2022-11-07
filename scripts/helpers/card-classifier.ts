@@ -80,7 +80,9 @@ module.exports.classify = function(card) {
       }
 
       const armySize = armyNumberFromText(abil);
-      card.tags.push(`Army (${armySize})`);
+      if(armySize) {
+        card.tags.push(`Army (${armySize})`);
+      }
     }
 
     if(hasAllText(abil, ['When damage dealt by this card is canceled, you may put this card into your stock.'])) {
