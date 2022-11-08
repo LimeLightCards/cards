@@ -31,7 +31,7 @@ module.exports.classify = function(card) {
       card.tags.push('Change');
     }
 
-    if(abil.includes('CXCOMBO')) {
+    if(abil.includes('CXCOMBO') || hasAllText(abil, ['card named', 'is in your climax area'])) {
       card.tags.push('CXCOMBO');
     }
 
