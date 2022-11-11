@@ -2,5 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["DOM"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   }
 }

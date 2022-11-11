@@ -1,0 +1,22 @@
+[
+  {
+    "terms": ["put the top card of your clock into your waiting room"],
+    "tag": "Healer"
+  },
+  {
+    "terms": ["this card gets -1 level while in your hand"],
+    "tag": "Early Summon"
+  },
+  {
+    "terms": ["When damage dealt by this card is canceled, you may put this card into your stock."],
+    "tag": "Cancel Self Stock"
+  },
+  {
+    "terms": ["marker"],
+    "tag": "Marker"
+  },
+  {
+    "terms": ["waiting room", "return it to your hand"],
+    "tag": "Salvage"
+  }
+]

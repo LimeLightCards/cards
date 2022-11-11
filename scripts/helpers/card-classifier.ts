@@ -1,4 +1,8 @@
+
 import { armyNumberFromText } from './army-number-from-text';
+import * as classifications from './classifications.json';
+
+const allClassifications = (classifications as any).default || classifications;
 
 const hasAllText = (string, searches) => searches.every(search => string.toLowerCase().includes(search.toLowerCase()));
 
@@ -64,14 +68,6 @@ module.exports.classify = function(card) {
       }
     }
 
-    if(hasAllText(abil, ['put the top card of your clock into your waiting room'])) {
-      card.tags.push('Clock Cleanse');
-    }
-
-    if(hasAllText(abil, ['this card gets -1 level while in your hand'])) {
-      card.tags.push('Early Summon');
-    }
-
     if(hasAllText(abil, ['with the same card name as this card'])) {
       card.tags.push('Army');
 
@@ -85,17 +81,12 @@ module.exports.classify = function(card) {
       }
     }
 
-    if(hasAllText(abil, ['When damage dealt by this card is canceled, you may put this card into your stock.'])) {
-      card.tags.push('Cancel Self Stock');
-    }
+    allClassifications.forEach(({ terms, tag }) => {
+      if(hasAllText(abil, terms)) {
+        card.tags.push(tag);
+      }
+    })
 
-    if(hasAllText(abil, ['marker'])) {
-      card.tags.push('Marker')
-    }
-
-    if(hasAllText(abil, ['waiting room', 'return it to your hand'])) {
-      card.tags.push('Salvage')
-    }
   });
 
   card.tags = [...new Set(card.tags)];
