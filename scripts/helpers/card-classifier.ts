@@ -65,7 +65,7 @@ module.exports.classify = function(card) {
     }
 
     if(hasAllText(abil, ['put the top card of your clock into your waiting room'])) {
-      card.tags.push('Clock Cleanse');
+      card.tags.push('Healer');
     }
 
     if(hasAllText(abil, ['this card gets -1 level while in your hand'])) {
