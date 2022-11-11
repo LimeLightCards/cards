@@ -31,7 +31,10 @@ module.exports.classify = function(card) {
       card.tags.push('Change');
     }
 
-    if(abil.includes('CXCOMBO') || hasAllText(abil, ['card named', 'is in your climax area'])) {
+    if(abil.includes('CXCOMBO') 
+    || hasAllText(abil, ['card named', 'is in your climax area'])
+    || hasAllText(abil, ['is placed on your climax area'])
+    || hasAllText(abil, ['from your climax area into your waiting room'])) {
       card.tags.push('CXCOMBO');
     }
 
