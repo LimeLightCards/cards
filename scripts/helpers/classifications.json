@@ -19,7 +19,8 @@
     "terms": ["waiting room", "return it to your hand"],
     "tag": "Salvage"
   },
-  { "terms": ["from hand to waiting room", "search your deck"],
+  { 
+   "terms": ["waiting room", "search your deck"],
    "tag": "Drop Search"
   }
 ]
