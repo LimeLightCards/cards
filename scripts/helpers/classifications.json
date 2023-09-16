@@ -5,21 +5,130 @@
   },
   {
     "terms": ["this card gets -1 level while in your hand"],
-    "tag": "Early Summon"
+    "tag": "Early Play"
   },
   {
     "terms": ["When damage dealt by this card is canceled, you may put this card into your stock."],
     "tag": "Cancel Self Stock"
   },
   {
+    "terms": ["this card gets", "power", "for each of your other"],
+    "tag": "Selfish Power"
+  },
+  {
     "terms": ["marker"],
     "tag": "Marker"
   },
   {
-    "terms": ["waiting room", "return it to your hand"],
-    "tag": "Salvage"
+    "terms": ["great performance"],
+    "tag": "Great Performance"
   },
-  { "terms": ["from hand to waiting room", "search your deck"],
-   "tag": "Drop Search"
+  {
+    "terms": ["encore"],
+    "tag": "Encore"
+  },
+  {
+    "terms": ["experience"],
+    "tag": "Experience"
+  },
+  {
+    "terms": ["memory"],
+    "tag": "Memory"
+  },
+  {
+    "terms": ["shift"],
+    "tag": "Shift"
+  },
+  {
+    "terms": ["bond"],
+    "tag": "Bond"
+  },
+  {
+    "terms": ["brainstorm"],
+    "tag": "Brainstorm"
+  },
+  {
+    "terms": ["change"],
+    "tag": "Change"
+  },
+  {
+    "terms": ["assist"],
+    "tag": "Assist"
+  },
+  {
+    "terms": ["+x power"],
+    "tag": "Assist (X)"
+  },
+  {
+    "terms": ["look at up to", "cards from the top of your deck", "choose up to", "put it into your hand"],
+    "tag": "Top Deck Swapper"
+  },
+  {
+    "terms": ["waiting room", "return it to your hand"],
+    "tag": "Drop Salvage"
+  },
+  { 
+    "terms": ["from hand to waiting room", "search your deck"],
+    "tag": "Drop Search"
+  },
+  { 
+    "terms": ["when this card becomes", "reverse", "if this card's battle opponent is level 0 or lower"],
+    "tag": "Level 0 Bomb"
+  },
+  { 
+    "terms": ["when this card becomes", "reverse", "if this card's battle opponent is level 1 or lower"],
+    "tag": "Level 1 Bomb"
+  },
+  { 
+    "terms": ["when this card becomes", "reverse", "if this card's battle opponent is level 2 or lower"],
+    "tag": "Level 2 Bomb"
+  },
+  { 
+    "terms": ["when this card becomes", "reverse", "if this card's battle opponent is level 3 or lower"],
+    "tag": "Level 3 Bomb"
+  },
+  { 
+    "terms": ["when this card becomes", "reverse", "if the level of this card's battle opponent is higher than your opponent's level"],
+    "tag": "Anti-Change Bomb"
+  },
+  {
+    "terms": ["when this card becomes", "reverse", "if this card's battle opponent", "you may put that character into your opponent's stock"],
+    "tag": "Stock Bomb"
+  },
+  {
+    "terms": ["when this card becomes", "reverse", "if this card's battle opponent", "you may put the top card of your opponent's clock into their waiting room"],
+    "tag": "Clock Bomb"
+  },
+  {
+    "terms": ["when this card becomes", "reverse", "in battle", "if this card's battle opponent", "you may put that character at the bottom of your opponent's deck"],
+    "tag": "Bottom Deck Bomb"
+  },
+  {
+    "terms": ["when this card's battle opponent becomes", "reverse", "put that battle opponent into your opponent's clock"],
+    "tag": "Clock Kick"
+  },
+  {
+    "terms": ["when this card's battle opponent becomes", "reverse", "move it to an open position of your back stage"],
+    "tag": "Clean Cut"
+  },
+  {
+    "terms": ["you may put the top card of your deck into your waiting room", "move this card to an open position of your center stage"],
+    "tag": "Mill Runner"
+  },
+  {
+    "terms": ["at the beginning of your opponent's attack phase", "move this card into an open position of your center stage"],
+    "tag": "Free Runner"
+  },
+  {
+    "terms": ["at the beginning of your opponent's attack phase", "move this card into the open middle position of your center stage"],
+    "tag": "Center Runner"
+  },
+  {
+    "terms": ["the card facing this card cannot move to another position on the stage"],
+    "tag": "Anti Runner"
+  },
+  {
+    "terms": ["you may move this card to an open position of your center stage with a character facing this card"],
+    "tag": "Chaser"
   }
 ]

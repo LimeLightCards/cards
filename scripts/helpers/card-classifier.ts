@@ -14,52 +14,11 @@ module.exports.classify = function(card) {
       return;
     }
 
-    // raw abilities, bolded
-    if(abil.includes('Assist')) {
-      card.tags.push('Assist');
-
-      if(abil.includes('+X power')) {
-        card.tags.push('Assist (X)')
-      }
-    }
-
-    if(abil.includes('Bond')) {
-      card.tags.push('Bond');
-    }
-
-    if(abil.includes('Brainstorm')) {
-      card.tags.push('Brainstorm');
-    }
-
-    if(abil.includes('Change')) {
-      card.tags.push('Change');
-    }
-
     if(abil.includes('CXCOMBO') 
     || hasAllText(abil, ['card named', 'is in your climax area'])
     || hasAllText(abil, ['is placed on your climax area'])
     || hasAllText(abil, ['from your climax area into your waiting room'])) {
       card.tags.push('CXCOMBO');
-    }
-
-    if(abil.includes('Encore')) {
-      card.tags.push('Encore');
-    }
-
-    if(abil.includes('Experience')) {
-      card.tags.push('Experience');
-    }
-
-    if(abil.includes('Great Performance')) {
-      card.tags.push('Great Performance');
-    }
-
-    if(abil.includes('Memory')) {
-      card.tags.push('Memory');
-    }
-
-    if(abil.includes('Shift')) {
-      card.tags.push('Shift');
     }
 
     // other abilities that require more work
@@ -94,11 +53,10 @@ module.exports.classify = function(card) {
 
   card.tags = [...new Set(card.tags)];
 
-  /*
-  if(card.code === 'RZ/SE35-E45') {
+  if(card.code === 'GBS/S63-E038') {
     console.log(card.tags)
+    console.log(card);
   }
-  */
 
   return card;
 };
