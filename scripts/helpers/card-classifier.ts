@@ -53,7 +53,7 @@ module.exports.classify = function(card) {
 
   card.tags = [...new Set(card.tags)];
 
-  if(card.code === 'GBS/S63-E038') {
+  if(card.code === 'WS_LB/W21-065') {
     console.log(card.tags)
     console.log(card);
   }

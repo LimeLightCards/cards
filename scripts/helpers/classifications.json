@@ -124,15 +124,243 @@
     "tag": "Chaser"
   },
   {
-    "terms": ["this card gets", "power", "for each of your other"],
-    "tag": "Eli"
+    "terms": ["when this card is placed on the stage from your hand", "search your deck for up to one level 1 or lower character", "put it into your hand", "shuffle your deck"],
+    "tag": "Riki"
+  },
+  {
+    "terms": [],
+    "tag": "Christa"
+  },
+  {
+    "terms": [],
+    "tag": "Takitsubo"
+  },
+  {
+    "terms": [],
+    "tag": "Shenlin"
+  },
+  {
+    "terms": [],
+    "tag": "Ruijerd"
+  },
+  {
+    "terms": [],
+    "tag": "Azusa"
+  },
+  {
+    "terms": [],
+    "tag": "Chiyuri"
+  },
+  {
+    "terms": [],
+    "tag": "Amagi"
+  },
+  {
+    "terms": [],
+    "tag": "Rize"
+  },
+  {
+    "terms": [],
+    "tag": "Kazuma"
+  },
+  {
+    "terms": [],
+    "tag": "Koume"
   },
   {
     "terms": ["when this card's battle opponent becomes", "reverse", "move it to an open position of your back stage"],
     "tag": "Clean Cut"
   },
   {
+    "terms": [],
+    "tag": "Recording"
+  },
+  {
+    "terms": [],
+    "tag": "Console"
+  },
+  {
+    "terms": [],
+    "tag": "Riko"
+  },
+  {
+    "terms": [],
+    "tag": "Arisu"
+  },
+  {
+    "terms": [],
+    "tag": "Coinflip"
+  },
+  {
+    "terms": [],
+    "tag": "Joe Runner"
+  },
+  {
+    "terms": [],
+    "tag": "Haruna Encore"
+  },
+  {
+    "terms": [],
+    "tag": "Shinobu"
+  },
+  {
+    "terms": [],
+    "tag": "Time Machine"
+  },
+  {
+    "terms": [],
+    "tag": "Anti-salvage"
+  },
+  {
+    "terms": [],
+    "tag": "Blink"
+  },
+  {
+    "terms": [],
+    "tag": "Alpaca"
+  },
+  {
+    "terms": [],
+    "tag": "Shimakai"
+  },
+  {
+    "terms": [],
+    "tag": "Married Life"
+  },
+  {
+    "terms": [],
+    "tag": "Anti-Change Bomb"
+  },
+  {
+    "terms": [],
+    "tag": "Makoto"
+  },
+  {
+    "terms": [],
+    "tag": "Apples"
+  },
+  {
+    "terms": [],
+    "tag": "Futaba"
+  },
+  {
+    "terms": ["this card gets", "power", "for each of your other"],
+    "tag": "Eli"
+  },
+  {
+    "terms": [],
+    "tag": "Level Down"
+  },
+  {
+    "terms": [],
+    "tag": "Freefresh"
+  },
+  {
+    "terms": [],
+    "tag": "Shimakaza"
+  },
+  {
+    "terms": [],
+    "tag": "Maguro"
+  },
+  {
+    "terms": [],
+    "tag": "Minami"
+  },
+  {
+    "terms": [],
+    "tag": "Oboro"
+  },
+  {
+    "terms": [],
+    "tag": "Elly"
+  },
+  {
+    "terms": [],
+    "tag": "Yunyun"
+  },
+  {
+    "terms": [],
+    "tag": "Shiroha"
+  },
+  {
     "terms": ["When damage dealt by this card is canceled, put the top card of your deck into your waiting room"],
     "tag": "Musashi"
+  },
+  {
+    "terms": [],
+    "tag": "Last Shot"
+  },
+  {
+    "terms": [],
+    "tag": "Trouble Girl"
+  },
+  {
+    "terms": [],
+    "tag": "Misakuro"
+  },
+  {
+    "terms": [],
+    "tag": "Revenge Burn"
+  },
+  {
+    "terms": [],
+    "tag": "Damage Scry"
+  },
+  {
+    "terms": [],
+    "tag": "Fumio"
+  },
+  {
+    "terms": [],
+    "tag": "Stock Swap"
+  },
+  {
+    "terms": [],
+    "tag": "Icy Tail"
+  },
+  {
+    "terms": [],
+    "tag": "Shiki"
+  },
+  {
+    "terms": [],
+    "tag": "Commanding Strength"
+  },
+  {
+    "terms": [],
+    "tag": "Torch"
+  },
+  {
+    "terms": [],
+    "tag": "Warehouse"
+  },
+  {
+    "terms": [],
+    "tag": "Cigarette"
+  },
+  {
+    "terms": [],
+    "tag": "Anti-Damage"
+  },
+  {
+    "terms": [],
+    "tag": "Sayaka's Wish"
+  },
+  {
+    "terms": [],
+    "tag": "Leafa Counter"
+  },
+  {
+    "terms": [],
+    "tag": "Gloves"
+  },
+  {
+    "terms": [],
+    "tag": "Sword"
+  },
+  {
+    "terms": [],
+    "tag": "Mask"
   }
 ]
