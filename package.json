@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "build": "npm run get:cards && npm run copy:headers",
+    "classifier:test": "ts-node scripts/classifier-test",
     "copy:headers": "ts-node scripts/copy-headers",
     "get:cards": "ts-node scripts/get-cards",
     "check:version": "ts-node scripts/check-version"

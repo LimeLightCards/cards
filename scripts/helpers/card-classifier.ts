@@ -1,10 +1,14 @@
 
 import { armyNumberFromText } from './army-number-from-text';
 import * as classifications from './classifications.json';
+import { consistentizeText } from './consistentize-text';
 
 const allClassifications = (classifications as any).default || classifications;
 
-const hasAllText = (string, searches) => searches.every(search => string.toLowerCase().includes(search.toLowerCase()));
+const hasAllText = (string, searches) => {
+  const searchText = consistentizeText(string.toLowerCase());
+  return searches.every(search => searchText.includes(consistentizeText(search.toLowerCase())));
+}
 
 module.exports.classify = function(card) {
   card.tags = [];
@@ -44,6 +48,8 @@ module.exports.classify = function(card) {
     }
 
     allClassifications.forEach(({ terms, tag }) => {
+      if(terms.length === 0) return;
+      
       if(hasAllText(abil, terms)) {
         card.tags.push(tag);
       }
@@ -51,12 +57,7 @@ module.exports.classify = function(card) {
 
   });
 
-  card.tags = [...new Set(card.tags)];
-
-  if(card.code === 'WS_LB/W21-065') {
-    console.log(card.tags)
-    console.log(card);
-  }
+  card.tags = [...new Set(card.tags)].sort();
 
   return card;
 };
